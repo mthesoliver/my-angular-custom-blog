@@ -7,7 +7,8 @@ import { HomeComponent } from './pages/home/home.component';
   standalone: true,
   imports: [
     RouterOutlet,
-    HomeComponent],
+    HomeComponent
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

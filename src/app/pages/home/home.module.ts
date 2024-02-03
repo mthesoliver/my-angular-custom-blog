@@ -4,6 +4,7 @@ import { LargeCardComponent } from './large-card/large-card.component';
 import { SmallCardComponent } from './small-card/small-card.component';
 import { MenuTitleComponent } from './menu-title/menu-title.component';
 import { HeaderComponent } from '../../header/header.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -11,6 +12,7 @@ import { HeaderComponent } from '../../header/header.component';
   declarations: [],
   imports: [
     CommonModule,
+    FormsModule,
     LargeCardComponent,
     SmallCardComponent,
     MenuTitleComponent,
@@ -18,6 +20,7 @@ import { HeaderComponent } from '../../header/header.component';
   ],
   exports: [
     CommonModule,
+    FormsModule,
     LargeCardComponent,
     SmallCardComponent,
     MenuTitleComponent,
