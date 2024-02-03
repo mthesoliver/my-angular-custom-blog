@@ -1,0 +1,22 @@
+@import '../../../../styles.scss';
+
+.menu-title-container{
+    color:$light-text-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    hr{
+        width: 100%;
+        margin-block: 1rem;
+    }
+
+    h1{
+    padding-block:2rem;
+    font-size: $x-lg-font-size;
+    line-height:$x-lg-font-size;
+    text-align: center;
+    color: $primary-color;
+}
+}

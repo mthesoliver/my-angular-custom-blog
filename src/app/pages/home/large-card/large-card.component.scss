@@ -1,0 +1,40 @@
+@import '../../../../styles.scss';
+
+.lg-card-container{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:  center;
+    
+    .lg-card-picture{
+        max-width: 100%;
+        height: auto;
+
+        img{
+            width: 100%;
+            object-fit: cover;
+            aspect-ratio: 16/9;
+        }
+    }
+
+    .lg-card-title{
+        font-size: $lg-font-size;
+        line-height: 40px;
+        padding-block: 1rem;
+
+        h4 > a{
+        color: $primary-color;
+        }
+    }
+
+    .lg-card-description{
+        font-size: $x-sm-font-size;
+        line-height: 24px;
+        p{
+            color:$offset-text-color;
+        }
+    }
+}
+
