@@ -7,39 +7,42 @@
 
 <main class="main">
 
-    <div class="articles col-2">
+    <div class="articles" [ngClass]="colModel">
         <div class="articles-main">
             <app-large-card 
-            [blogPicture]="'https://store-images.s-microsoft.com/image/apps.1884.67106165561056339.f5ef1e85-f6c8-4e5e-be00-775a4fbde8bc.1bd63fbc-4c59-43af-a5a8-743ea1e3b299?q=90&w=480&h=270'"
-            [blogTitle]="'DC Universe está onFire'"
+            blogPicture="https://store-images.s-microsoft.com/image/apps.1884.67106165561056339.f5ef1e85-f6c8-4e5e-be00-775a4fbde8bc.1bd63fbc-4c59-43af-a5a8-743ea1e3b299?q=90&w=480&h=270"
+            blogTitle="DC Universe está onFire"
             ></app-large-card>
         </div>
 
         <div class="articles-others">
             <app-small-card
-            [blogTitle]="'Novo filme da DC'"
-            [blogPicture]="'https://cdn.vox-cdn.com/thumbor/MEfP7Gd30hPoW4crCCiGQQOukLs=/0x0:1822x1214/1200x800/filters:focal(753x43:1043x333)/cdn.vox-cdn.com/uploads/chorus_image/image/67636225/FS_JL_Cv1.0.jpg'"
+            blogTitle="Novo filme da DC"
+            blogPicture="https://cdn.vox-cdn.com/thumbor/MEfP7Gd30hPoW4crCCiGQQOukLs=/0x0:1822x1214/1200x800/filters:focal(753x43:1043x333)/cdn.vox-cdn.com/uploads/chorus_image/image/67636225/FS_JL_Cv1.0.jpg"
             ></app-small-card>
             <app-small-card
-            [blogTitle]="'DC lança novo jogo multiplataforma'"
-            [blogPicture]="'https://xxboxnews.blob.core.windows.net/prod/sites/2/2020/07/DCUO_Ep38_KeyArt_Hero.jpg'"
+            blogTitle="DC lança novo jogo multiplataforma"
+            blogPicture="https://xxboxnews.blob.core.windows.net/prod/sites/2/2020/07/DCUO_Ep38_KeyArt_Hero.jpg"
             ></app-small-card>
             <app-small-card
-            [blogPicture]="'https://portalpopline.com.br/wp-content/uploads/2022/02/duo-novo-heroi-dc-comics.png'"
-            [blogTitle]="'DC Comics anuncia novo herói ásio-americano'"
+            blogPicture="https://portalpopline.com.br/wp-content/uploads/2022/02/duo-novo-heroi-dc-comics.png"
+            blogTitle="DC Comics anuncia novo herói ásio-americano"
             ></app-small-card>
         </div>
     </div>
 
-    <div class="articles col-2">
+    <div class="articles" [ngClass]="colModelTwo">
         <div class="articles-main">
             <app-large-card></app-large-card>
         </div>
-
-        <div class="articles-others">
-            <app-small-card></app-small-card>
-            <app-small-card></app-small-card>
-            <app-small-card></app-small-card>
+        <div class="articles-main">
+            <app-large-card></app-large-card>
+        </div>
+        <div class="articles-main">
+            <app-large-card></app-large-card>
+        </div>
+        <div class="articles-main">
+            <app-large-card></app-large-card>
         </div>
     </div>
 

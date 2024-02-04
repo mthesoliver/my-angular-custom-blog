@@ -12,11 +12,13 @@
         max-width: 100%;
         width: 100%;
         height: auto;
+        overflow: hidden;
 
         img{
             width: 100%;
             object-fit: cover;
             aspect-ratio: 16/9;
+            transition: .6s ease;
         }
     }
 
@@ -24,6 +26,7 @@
         font-size: $lg-font-size;
         line-height: 40px;
         padding-block: 1rem;
+        transition: .6s ease;
 
         h4 > a{
         color: $primary-color;
@@ -31,11 +34,22 @@
     }
 
     .lg-card-description{
-        font-size: $x-sm-font-size;
-        line-height: 24px;
+        font-size: $sm-font-size;
+        line-height: calc($sm-font-size + .825rem);
         p{
             color:$offset-text-color;
         }
     }
+}
+
+.lg-card-container:hover .lg-card-picture > img{
+    transform: scale(1.1);
+    transition: .6s ease;
+    filter: brightness(120%);
+}
+
+.lg-card-container:hover .lg-card-title{
+    transition: .6s ease;
+    filter: brightness(150%);
 }
 

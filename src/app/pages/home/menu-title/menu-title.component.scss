@@ -6,17 +6,24 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
-    hr{
-        width: 100%;
-        margin-block: 1rem;
-    }
+    padding-block: 2rem 3rem;
+    border-block: 2px solid #ffffff60;
 
     h1{
     padding-block:2rem;
-    font-size: $x-lg-font-size;
+    font-size: $x-lg-font-size +40;
     line-height:$x-lg-font-size;
     text-align: center;
     color: $primary-color;
 }
+}
+
+@media screen and (max-width:768px){
+    .menu-title-container{
+    padding-block: .225rem .225rem;
+
+    h1{
+        font-size: $x-lg-font-size !important;
+    }
+    }
 }
