@@ -9,12 +9,13 @@ $primary-color: #a512cd;
 $secondary-color: #3c0d94;
 
 // Font Styles
-$x-lg-font-size: 64px;
+$x-lg-font-size:clamp(4rem, -4.2857rem + 17.2619vw, 14rem);
 $lg-font-size: clamp(2rem, 1.1429rem + 1.7857vw, 2.75rem);
 $md-font-size: clamp(1.625rem, 1.1964rem + 0.8929vw, 2rem);
 $sm-font-size:clamp(1rem, 0.7143rem + 0.5952vw, 1.25rem);
 $x-sm-font-size: clamp(0.75rem, 0.4643rem + 0.5952vw, 1rem);
 $xx-sm-font-size:clamp(0.625rem, 0.3393rem + 0.5952vw, 0.875rem);
+
 $font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol";

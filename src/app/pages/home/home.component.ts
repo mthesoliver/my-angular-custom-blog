@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
 
   colModel = '';
   colModelTwo ='';
-
+  
   ngOnInit(): void {
     this.verifyIsMobile()
   }

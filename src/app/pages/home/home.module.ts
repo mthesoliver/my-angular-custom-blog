@@ -1,3 +1,4 @@
+import { ContentComponent } from './../content/content.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LargeCardComponent } from './large-card/large-card.component';
@@ -16,7 +17,8 @@ import { FormsModule } from '@angular/forms';
     LargeCardComponent,
     SmallCardComponent,
     MenuTitleComponent,
-    HeaderComponent
+    HeaderComponent,
+    ContentComponent
   ],
   exports: [
     CommonModule,
@@ -24,7 +26,8 @@ import { FormsModule } from '@angular/forms';
     LargeCardComponent,
     SmallCardComponent,
     MenuTitleComponent,
-    HeaderComponent
+    HeaderComponent,
+    ContentComponent
   ]
 })
 export class HomeModule { }

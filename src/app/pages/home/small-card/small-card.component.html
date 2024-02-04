@@ -5,10 +5,10 @@
     </div>
     <div class="sm-card-wrapper">
         <div class="sm-card-title">
-            <h4><a href="#">{{ blogTitle}}</a></h4>
+            <h4><a [routerLink]="['content', id]">{{ blogTitle}}</a></h4>
         </div>
         <div class="sm-card-description">
-            <a href="#">
+            <a [routerLink]="['content', id]">
                 <p>{{ blogDescription }}</p>
             </a>
         </div>
