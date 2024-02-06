@@ -1,8 +1,12 @@
 <section class="content-container">
-    <a [routerLink]="['']" class="content-back"> < Voltar </a>
+    <div class="breadcomb">
+        <a (click)="prevPost(id)" class="content-prev"> < Post anterior </a>
+        <a [routerLink]="['']" class="content-back-home"> Voltar para a home</a>
+        <a (click)="nextPost(id)" class="content-next"> Próximo post > </a>
+    </div>
+
     <div class="cover-container">
-        <img src="{{ contentPicture }}"
-            alt="Placeholder Image" srcset="">
+        <img src="{{ contentPicture }}" alt="Placeholder Image" srcset="">
     </div>
     <div class="title-container">
         <h1>{{ contentTitle }}</h1>
@@ -11,3 +15,5 @@
         <p>{{ contentDescription }}</p>
     </div>
 </section>
+
+<app-header></app-header>

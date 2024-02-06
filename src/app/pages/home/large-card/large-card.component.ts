@@ -5,7 +5,7 @@ import { SharedModule } from '../../../shared/shared.module';
   selector: 'app-large-card',
   standalone: true,
   imports: [
-    SharedModule
+    SharedModule,
   ],
   templateUrl: './large-card.component.html',
   styleUrl: './large-card.component.scss'

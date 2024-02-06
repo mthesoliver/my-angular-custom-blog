@@ -1,13 +1,22 @@
-<h1>admin works!</h1>
+<section class="main col-2">
+    <div class="admin-info-box">
+        <h2>Insira um titulo para o post</h2>
+        <input type="text" [(ngModel)]="blogTitle">
 
-<h2>Titulo</h2>
-<input type="text">
+        <h2>Insira o conteúdo</h2>
+        <textarea [(ngModel)]="blogDescription"></textarea>
 
-<h2>Conteudo</h2>
-<textarea></textarea>
+        <h2>Selecione uma imagem</h2>
+        <input type="text" [(ngModel)]="blogPicture">
+        <input type="file">
+        <button type="submit"> Criar novo post </button>
+    </div>
 
-<h2>Imagem</h2>
-<input type="file">
-<br>
-<br>
-<button type="submit"> Criar novo post </button>
+    <div class="admin-post-preview">
+        <app-large-card
+        [blogTitle]="blogTitle"
+        [blogDescription]="blogDescription"
+        [blogPicture]="blogPicture"
+        ></app-large-card>
+    </div>
+</section>

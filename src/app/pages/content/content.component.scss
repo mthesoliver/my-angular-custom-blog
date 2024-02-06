@@ -1,5 +1,4 @@
 @import '../../../styles.scss';
-
 .content-container{
     padding-block: 2rem;
     display: flex;
@@ -34,5 +33,107 @@
         padding-inline:2rem;
         color: $primary-color;
         font-size: $sm-font-size;
+        line-height: calc($sm-font-size + 16px);
     }
+}
+
+
+
+.breadcomb{
+    padding: 1rem;
+    padding-inline:2rem;
+    width: 100%;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+
+    a{
+        font-size: $x-sm-font-size;
+        cursor: pointer;
+        padding: .625rem .625rem;
+        border:1px solid #ffffff60;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+    }
+
+
+@media screen and (min-width:620px) {
+
+    a{
+        font-size: $sm-font-size;
+        cursor: pointer;
+        padding: .625rem 2rem;
+        border:1px solid #ffffff60;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .content-prev::before{
+        content: '';
+        background-color:$primary-color;
+        font-weight: 600;
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        scale: 1;
+        right: -6.5rem;
+        top: -6.5rem;
+        border-radius: 50%;
+        transition: .6s ease;
+        z-index: -1;
+    }
+
+    .content-next::after{
+        content: '';
+        background-color:$primary-color;
+        font-weight: 600;
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        scale: 1;
+        left: -6.5rem;
+        top: -6.5rem;
+        border-radius: 50%;
+        transition: .6s ease;
+        z-index: -1;
+    }
+
+    .content-next:hover::after{
+        left: 2.5rem;
+        top: -2.5rem;
+        scale: 2.5;
+        transition: .6s ease;
+    }
+
+    .content-prev:hover::before{
+        right: 2.5rem;
+        top: -2.5rem;
+        scale: 2;
+        transition: .6s ease;
+    }
+
+    .content-back-home::after{
+        content: '';
+        background-color:$primary-color;
+        font-weight: 600;
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        scale: 1;
+        left: 3.5rem;
+        top: 3.5rem;
+        border-radius: 50%;
+        transition: .6s ease;
+        z-index: -1;
+    }
+
+    .content-back-home:hover::after{
+        right: 2.5rem;
+        top: -2.5rem;
+        scale: 2;
+        transition: .6s ease;
+    }
+}
 }

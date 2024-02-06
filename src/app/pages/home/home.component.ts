@@ -13,8 +13,8 @@ import { HomeModule } from './home.module';
 export class HomeComponent implements OnInit {
 
   colModel = '';
-  colModelTwo ='';
-  
+  colModelTwo = '';
+
   ngOnInit(): void {
     this.verifyIsMobile()
   }
@@ -32,7 +32,7 @@ export class HomeComponent implements OnInit {
     })
   }
 
-  selectColMod(){
+  selectColMod() {
     if (window.innerWidth <= 769) {
       this.colModel = 'col-1';
       this.colModelTwo = 'col-2'

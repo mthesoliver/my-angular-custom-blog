@@ -1,4 +1,4 @@
-<main class="main">
+<section class="main">
 
     <div class="articles" [ngClass]="colModel">
         <div class="articles-main">
@@ -15,11 +15,14 @@
             blogTitle="Novo filme da DC"
             blogPicture="https://cdn.vox-cdn.com/thumbor/MEfP7Gd30hPoW4crCCiGQQOukLs=/0x0:1822x1214/1200x800/filters:focal(753x43:1043x333)/cdn.vox-cdn.com/uploads/chorus_image/image/67636225/FS_JL_Cv1.0.jpg"
             ></app-small-card>
+
+
             <app-small-card
             id="3"
             blogTitle="DC lança novo jogo multiplataforma"
             blogPicture="https://xxboxnews.blob.core.windows.net/prod/sites/2/2020/07/DCUO_Ep38_KeyArt_Hero.jpg"
             ></app-small-card>
+
             <app-small-card
             id="4"
             blogPicture="https://portalpopline.com.br/wp-content/uploads/2022/02/duo-novo-heroi-dc-comics.png"
@@ -28,19 +31,25 @@
         </div>
     </div>
 
-    <div class="articles" [ngClass]="colModelTwo">
-        <div class="articles-main">
-            <app-large-card></app-large-card>
-        </div>
-        <div class="articles-main">
-            <app-large-card></app-large-card>
-        </div>
-        <div class="articles-main">
-            <app-large-card></app-large-card>
-        </div>
-        <div class="articles-main">
-            <app-large-card></app-large-card>
-        </div>
-    </div>
+</section>
 
-</main>
+
+
+<div class="articles light-bg" [ngClass]="colModelTwo">
+    <div class="articles-main">
+        <app-large-card></app-large-card>
+    </div>
+    <div class="articles-main">
+        <app-large-card></app-large-card>
+    </div>
+    <div class="articles-main">
+        <app-large-card></app-large-card>
+    </div>
+    <div class="articles-main">
+        <app-large-card></app-large-card>
+    </div>
+</div>
+
+
+
+<app-header></app-header>

@@ -5,11 +5,11 @@
     </div>
 
     <div class="lg-card-title">
-        <h4><a [routerLink]="['content', id]">{{ blogTitle }}</a></h4>
+        <h4><a [routerLink]="['content', blogTitle]">{{ blogTitle }}</a></h4>
     </div>
 
     <div class="lg-card-description">
-        <a  [routerLink]="['content', id]">
+        <a  [routerLink]="['content', blogTitle]">
             <p>{{ blogDescription }}</p>
         </a>
     </div>
